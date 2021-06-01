@@ -1,0 +1,40 @@
+name: Firebase
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[no-actions]')"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - name: Config
+        id: npm-cache
+        run: |
+          echo "::set-output name=dir::$(npm config get cache)"
+      - name: Cache
+        id: cache-primes
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.npm-cache.outputs.dir }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Install
+        run: npm install
+      - name: Build
+        timeout-minutes: 15
+        run: npm run build
+        env:
+          NODE_ENV: production
+      - name: Deploy
+        timeout-minutes: 5
+        run: echo "deploy --message ${GITHUB_SHA}"
