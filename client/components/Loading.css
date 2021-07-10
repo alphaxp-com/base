@@ -1,0 +1,27 @@
+.spinner > span {
+  animation: bounce-delay 1.4s infinite ease-in-out both;
+}
+
+.spinner > span:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.spinner > span:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+button:hover .spinner .bg-theme-red {
+  background-color: #fff;
+}
+
+@keyframes bounce-delay {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+
+  40% {
+    transform: scale(1);
+  }
+}
