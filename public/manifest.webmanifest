@@ -1,0 +1,18 @@
+{
+  "description": "Alpha Experience",
+  "icons": [
+    {
+      "sizes": "192x192",
+      "src": "/icon-192.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "512x512",
+      "src": "/icon-512.png",
+      "type": "image/png"
+    }
+  ],
+  "name": "alphaxp:app",
+  "short_name": "alphaxp",
+  "version": "0.0.1"
+}
