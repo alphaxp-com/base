@@ -18,7 +18,9 @@
     "lint:css": "stylelint --fix '**/*.css'",
     "lint:js": "eslint --fix --ext .js,.ts,.tsx ./",
     "lint:types": "tsc --noEmit",
-    "test": "NODE_OPTIONS='--experimental-vm-modules' jest"
+    "pretest": "yarn lint",
+    "test": "NODE_OPTIONS='--experimental-vm-modules' jest",
+    "prepare": "husky install"
   },
   "dependencies": {
     "debug": "4.3.2",
@@ -44,6 +46,7 @@
     "eslint-plugin-jest": "24.3.6",
     "eslint-plugin-prettier": "3.4.0",
     "eslint-plugin-react": "7.24.0",
+    "husky": "7.0.1",
     "jest": "27.0.6",
     "nock": "13.1.1",
     "postcss": "8.3.5",
