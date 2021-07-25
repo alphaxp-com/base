@@ -29,10 +29,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - name: Install
-        run: npm install
+        run: yarn install
       - name: Build
         timeout-minutes: 15
-        run: npm run build
+        run: yarn build
         env:
           NODE_ENV: production
       - name: Deploy
