@@ -14,9 +14,9 @@ export const Loading: React.FunctionComponent<{ page?: boolean }> = ({
   return (
     <div className={className}>
       <div className="spinner inline-flex m-auto">
-        <span className="bg-theme-blue w-4 h-4 rounded-full" />
-        <span className="bg-theme-black ml-1 w-4 h-4 rounded-full" />
-        <span className="bg-theme-red ml-1 w-4 h-4 rounded-full" />
+        <span className="w-4 h-4 bg-gray-200 rounded-full" />
+        <span className="ml-1 w-4 h-4 bg-gray-300 rounded-full" />
+        <span className="ml-1 w-4 h-4 bg-gray-400 rounded-full" />
       </div>
     </div>
   );

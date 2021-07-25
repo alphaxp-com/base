@@ -6,11 +6,11 @@ export const Page: React.FunctionComponent<{
 }> = ({ code = 500, message }) => {
   return (
     <div
-      className="flex items-center justify-center w-screen h-screen"
+      className="flex flex-col items-center justify-center w-screen h-screen"
       id="error"
     >
-      <h1>{code}</h1>
-      <h2>{message}</h2>
+      <h1 className="text-8xl">{code}</h1>
+      <h2 className="text-2xl">{message}</h2>
     </div>
   );
 };

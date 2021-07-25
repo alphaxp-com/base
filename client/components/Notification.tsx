@@ -26,7 +26,7 @@ export const Notification: React.FunctionComponent<NotificationComponentProps> =
     const bgColor = React.useMemo(() => {
       switch (type) {
         case "alert":
-          return "bg-orange-100";
+          return "bg-yellow-100";
         case "error":
           return "bg-red-100";
         case "info":
@@ -39,7 +39,7 @@ export const Notification: React.FunctionComponent<NotificationComponentProps> =
     const borderColor = React.useMemo(() => {
       switch (type) {
         case "alert":
-          return "border-orange-400";
+          return "border-yellow-400";
         case "error":
           return "border-red-400";
         case "info":
@@ -52,7 +52,7 @@ export const Notification: React.FunctionComponent<NotificationComponentProps> =
     const textColor = React.useMemo(() => {
       switch (type) {
         case "alert":
-          return "text-orange-600";
+          return "text-yellow-600";
         case "error":
           return "text-red-600";
         case "info":
