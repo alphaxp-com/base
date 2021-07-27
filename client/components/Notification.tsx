@@ -13,7 +13,7 @@ export const Notification: React.FunctionComponent<NotificationComponentProps> =
   ({ message, onClose = () => null, type = "info" }) => {
     React.useEffect(() => {
       if (!message) {
-        return null;
+        return;
       }
 
       setTimeout(onClose, 10 * 1000);

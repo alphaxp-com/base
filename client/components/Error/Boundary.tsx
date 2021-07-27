@@ -17,7 +17,7 @@ export class Boundary extends React.Component {
 
   public componentDidCatch(error: Error, info: React.ErrorInfo): void {
     if (isProduction) {
-      window["gtag"]("event", "exception", {
+      (window as any)["gtag"]("event", "exception", {
         description: error,
         fatal: true,
       });
