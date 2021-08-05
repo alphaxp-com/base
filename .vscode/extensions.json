@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "bierner.comment-tagged-templates",
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "ms-azuretools.vscode-docker",
+    "ms-vscode-remote.remote-containers",
+    "stylelint.vscode-stylelint"
+  ]
+}
