@@ -6,6 +6,7 @@ module.exports = {
       "<rootDir>/jest.mock.file.js",
   },
   preset: "ts-jest",
+  setupFiles: ["<rootDir>/jest.setup.js"],
   testEnvironment: "jsdom",
   testMatch: ["**/*.test.*"],
 };
