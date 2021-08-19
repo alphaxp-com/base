@@ -1,4 +1,4 @@
-name: Firebase
+name: Main
 on:
   push:
     branches:
