@@ -28,7 +28,13 @@ export class Boundary extends React.Component {
 
   public render(): React.ReactNode {
     if (this.state.error) {
-      return <Page code={500} message="An error occurred" />;
+      return (
+        <Page
+          code={500}
+          message="An error occurred"
+          reset={() => this.setState({ error: null })}
+        />
+      );
     }
 
     return this.props.children;
