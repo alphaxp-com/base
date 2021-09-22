@@ -1,10 +1,12 @@
 import React from "react";
 
-export const Page: React.FunctionComponent<{
-  code: number;
-  message: string;
-  reset?: () => void;
-}> = ({ code = 500, message, reset }) => {
+import { PageProps } from "./Page.d";
+
+export const Page: React.FunctionComponent<PageProps> = ({
+  code = 500,
+  message,
+  reset,
+}) => {
   return (
     <div
       className="flex flex-col items-center justify-center w-screen h-screen"

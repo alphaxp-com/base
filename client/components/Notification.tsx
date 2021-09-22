@@ -1,13 +1,6 @@
 import React from "react";
 
-export type NotificationProps = {
-  message: string;
-  type?: "alert" | "error" | "info" | "success";
-};
-
-type NotificationComponentProps = NotificationProps & {
-  onClose?: () => void;
-};
+import { NotificationComponentProps } from "./Notification.d";
 
 export const Notification: React.FunctionComponent<NotificationComponentProps> =
   ({ message, onClose = () => null, type = "info" }) => {

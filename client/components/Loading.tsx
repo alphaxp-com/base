@@ -1,10 +1,9 @@
 import React from "react";
 
+import { LoadingProps } from "./Loading.d";
 import "./Loading.css";
 
-export const Loading: React.FunctionComponent<{ page?: boolean }> = ({
-  page,
-}) => {
+export const Loading: React.FunctionComponent<LoadingProps> = ({ page }) => {
   const className = React.useMemo(
     () =>
       page ? "flex items-center justify-center w-screen h-screen" : undefined,

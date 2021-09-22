@@ -1,12 +1,7 @@
 import React from "react";
 
+import { ApiProviderProps } from "./Api.d";
 import { useApiService } from "../services/api";
-
-type ApiProviderProps = {
-  children: React.ReactNode;
-  url: string;
-  params?: any;
-};
 
 export const ApiContext = React.createContext<any>(null);
 
