@@ -1,7 +1,7 @@
 import React from "react";
 
 import { ErrorBoundary, Loading } from "./components";
-import { ApiProvider } from "./providers";
+import { ApiProvider } from "./hooks";
 
 export const App: React.FunctionComponent = () => {
   return (
