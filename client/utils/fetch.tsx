@@ -65,7 +65,7 @@ export async function request(url: string, params: RequestInit): Promise<any> {
     }
 
     return res;
-  } catch (e) {
+  } catch (e: any) {
     if (e.name === "AbortError") {
       return;
     }
