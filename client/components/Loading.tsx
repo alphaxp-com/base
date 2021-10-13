@@ -3,7 +3,7 @@ import React from "react";
 import { LoadingProps } from "./Loading.d";
 import "./Loading.css";
 
-export const Loading: React.FunctionComponent<LoadingProps> = ({ page }) => {
+export function Loading({ page }: LoadingProps): JSX.Element {
   const className = React.useMemo(
     () =>
       page ? "flex items-center justify-center w-screen h-screen" : undefined,
@@ -19,4 +19,4 @@ export const Loading: React.FunctionComponent<LoadingProps> = ({ page }) => {
       </div>
     </div>
   );
-};
+}

@@ -3,7 +3,7 @@ import React from "react";
 import { ErrorBoundary, Loading } from "./components";
 import { ApiProvider } from "./hooks";
 
-export const App: React.FunctionComponent = () => {
+export function App(): JSX.Element {
   return (
     <React.Suspense fallback={<Loading />}>
       <ErrorBoundary>
@@ -13,4 +13,4 @@ export const App: React.FunctionComponent = () => {
       </ErrorBoundary>
     </React.Suspense>
   );
-};
+}

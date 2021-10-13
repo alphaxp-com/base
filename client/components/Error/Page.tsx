@@ -2,11 +2,7 @@ import React from "react";
 
 import { PageProps } from "./Page.d";
 
-export const Page: React.FunctionComponent<PageProps> = ({
-  code = 500,
-  message,
-  reset,
-}) => {
+export function Page({ code = 500, message, reset }: PageProps): JSX.Element {
   return (
     <div
       className="flex flex-col items-center justify-center w-screen h-screen"
@@ -17,4 +13,4 @@ export const Page: React.FunctionComponent<PageProps> = ({
       {reset && <button onClick={reset}>retry request</button>}
     </div>
   );
-};
+}
