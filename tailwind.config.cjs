@@ -1,16 +1,11 @@
 module.exports = {
-  purge: ["./client/**/*.{ts,tsx}"],
-  darkMode: "media",
-  // mode: "jit",
+  content: ["./client/**/*.{ts,tsx}"],
   theme: {
     extend: {
       colors: {
         theme: {},
       },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
 };

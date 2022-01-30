@@ -5,7 +5,7 @@ import { PageProps } from "./Page.d";
 export function Page({ code = 500, message, reset }: PageProps): JSX.Element {
   return (
     <div
-      className="flex flex-col items-center justify-center w-screen h-screen"
+      className="flex h-screen w-screen flex-col items-center justify-center"
       id="error"
     >
       <h1 className="text-8xl">{code}</h1>
