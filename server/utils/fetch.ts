@@ -1,5 +1,6 @@
+import { fetch as _fetch } from "undici";
+
 import { Exception } from "./Exception";
-import _fetch from "node-fetch";
 
 type FetchParamsProps = {
   body?: any;

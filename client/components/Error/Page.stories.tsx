@@ -1,14 +1,14 @@
+import type { Story } from "@ladle/react";
 import React from "react";
-import { ComponentStory, Meta } from "@storybook/react";
 
 import { Page } from "./Page";
+import { PageProps } from "./Page.d";
 
 export default {
-  component: Page,
   title: "Components/Error/Page",
-} as Meta;
+};
 
-const Template: ComponentStory<typeof Page> = (args) => <Page {...args} />;
+const Template: Story<PageProps> = (args) => <Page {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   code: 404,

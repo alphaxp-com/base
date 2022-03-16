@@ -60,7 +60,7 @@ export function Notification({
 
   return (
     <div
-      className={`body-font fixed top-7 right-7 z-10 flex rounded border bg-white px-6 py-4 pr-12 shadow-lg ${bgColor} ${borderColor} ${textColor}`}
+      className={`body-font bg-white fixed top-7 right-7 z-10 flex rounded border px-6 py-4 pr-12 shadow-lg ${bgColor} ${borderColor} ${textColor}`}
     >
       <p className="text-base">{message}</p>
       <button

@@ -16,9 +16,9 @@ export function Loading({
   return (
     <div className={className}>
       <div className="spinner m-auto inline-flex">
-        <span className={`${_className} rounded-full bg-gray-200`} />
-        <span className={`${_className} ml-1 rounded-full bg-gray-300`} />
-        <span className={`${_className} ml-1 rounded-full bg-gray-400`} />
+        <span className={`${_className} bg-gray-200 rounded-full`} />
+        <span className={`${_className} bg-gray-300 ml-1 rounded-full`} />
+        <span className={`${_className} bg-gray-400 ml-1 rounded-full`} />
       </div>
     </div>
   );

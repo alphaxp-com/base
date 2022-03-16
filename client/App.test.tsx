@@ -1,12 +1,11 @@
 import React from "react";
-import { render, unmountComponentAtNode } from "react-dom";
+import renderer from "react-test-renderer";
+import { describe, test } from "vitest";
 
 import { App } from "./App";
 
 describe("app", function () {
   test("renders", () => {
-    const app = window.document.createElement("div");
-    render(<App />, app);
-    unmountComponentAtNode(app);
+    renderer.create(<App />);
   });
 });

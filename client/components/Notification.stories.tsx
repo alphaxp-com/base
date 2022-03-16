@@ -1,16 +1,14 @@
+import type { Story } from "@ladle/react";
 import React from "react";
-import { ComponentStory, Meta } from "@storybook/react";
 
 import { Notification } from "./Notification";
+import { NotificationProps } from "./Notification.d";
 
 export default {
-  component: Notification,
   title: "Components/Notification",
-} as Meta;
+};
 
-const Template: ComponentStory<typeof Notification> = (args) => (
-  <Notification {...args} />
-);
+const Template: Story<NotificationProps> = (args) => <Notification {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   message: "Notification message",

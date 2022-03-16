@@ -1,11 +1,9 @@
 module.exports = {
   content: ["./client/**/*.{ts,tsx}"],
+  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
   theme: {
-    extend: {
-      colors: {
-        theme: {},
-      },
+    colors: {
+      theme: {},
     },
   },
-  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
 };

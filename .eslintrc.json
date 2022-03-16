@@ -3,11 +3,8 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ],
-  "env": {
-    "jest": true
-  },
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "prettier", "jest"],
+  "plugins": ["@typescript-eslint", "prettier"],
   "root": true,
   "rules": {
     "@typescript-eslint/no-explicit-any": "off",
